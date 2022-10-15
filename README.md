@@ -1,1 +1,2 @@
-Ecommerce in React Js
+In this Project, we have build an E-commerce App with React using<b> ButterCMS and Snipcart</b>. We have use <b>Chakra UI</b>, a modular and accessible component library, to style the app.
+Finally, we have deployed our ecommerce app with Stormkit, a serverless deployment service for JavaScript apps similar to Vercel or Netlify.
