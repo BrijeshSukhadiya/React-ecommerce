@@ -31,7 +31,12 @@ function App() {
 
   return (
     <Container maxW="container.xl" h="100vh" >
-      <Flex justifyContent="space-between" alignContent="center">
+      {
+        products.length == 0 ? (
+          <p>No products in cart</p>
+        ) : (
+          <>
+          <Flex justifyContent="space-between" alignContent="center">
         <Text
           as="a"
           href="/"
@@ -53,7 +58,7 @@ function App() {
         >
           View Cart
         </Button>
-      </Flex>
+      </Flex >
       <Divider />
       <Box mt={4}>
         <SimpleGrid
@@ -138,7 +143,11 @@ function App() {
           ))}
         </SimpleGrid>
       </Box>
-    </Container>
+          </>
+        )
+}
+      
+    </Container >
   );
 }
 
